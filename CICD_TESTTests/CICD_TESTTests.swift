@@ -32,5 +32,11 @@ class CICD_TESTTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-
+    
+    func testFail() throws {
+        XCTFail()
+    }
+    func testSucess() throws {
+        XCTAssertEqual(1, 1)
+    }
 }
