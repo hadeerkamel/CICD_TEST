@@ -31,4 +31,7 @@ class CICD_TESTTests: XCTestCase {
     func testSucess() throws {
         XCTAssertEqual(1, 1)
     }
+    func testFail() throws{
+        XCTFail()
+    }
 }
